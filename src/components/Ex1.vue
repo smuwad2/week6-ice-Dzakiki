@@ -1,7 +1,15 @@
 <script>
     export default { 
         // Add Code Here
-        // challenge: use array  
+        // challenge: use array
+        data() {
+            return {
+                message: "Choose your favourite fruit: ",
+                fruit1: "apple",
+                fruit2: "orange",
+                fruit3: "peach"
+            }
+        }
     }
 </script>
 
