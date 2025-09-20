@@ -5,7 +5,6 @@
                 selectedOption: 'username'
             }
         }
-
     }
 </script>
 
@@ -19,11 +18,11 @@
     </select>
     
     <div v-if="selectedOption == 'username'">
-        <label>Username: </label>
+        <label>Username</label>
         <input placeholder="Enter your username">
     </div>
     <div v-else>
-        <label>Email: </label>
+        <label>Email</label>
         <input placeholder="Enter your email">
     </div>
 </template>

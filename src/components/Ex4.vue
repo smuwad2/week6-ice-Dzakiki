@@ -27,7 +27,7 @@
             div ID : {{id}} 
         </div>
         
-        <button type="button" v-on:click="toggleColor" v-bind:class="isRedbtn ? 'btn-danger' : 'btn-secondary'">Change Color</button>
+        <button type="button" v-on:click="toggleColor" v-bind:class="isRedbtn ? 'btn-danger' : 'btn-secondary'" :class="btn">Change Color</button>
     </div>
 
 </template>
