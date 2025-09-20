@@ -12,7 +12,7 @@
     }
 </script>
 
-<template>   
+<template>
     <a><router-link to="/Ex1/">Exercise1</router-link></a> 
     <a><router-link to="/Ex2/">Exercise2</router-link></a>
     <a><router-link to="/Ex3/">Exercise3</router-link></a>
