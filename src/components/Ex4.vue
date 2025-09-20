@@ -3,23 +3,31 @@
         data() {
             return {
                 // Add code here
+                isRed: false,
+                isRedbtn: false,
+                id: 'demo1'
             }
         },
-        methods: { 
+        methods: {
    			// Add code here
+            toggleColor() {
+                this.isRed = !this.isRed;
+                this.isRedbtn = !this.isRedbtn;
+            }
 		}
     }
 </script>
+
 
 <template>
     
     <!-- Modify code here -->
     <div class="container">
-        <div v-bind:id="id" class="m-2">
+        <div v-bind:id="id" class="m-2" v-bind:class="isRed ? 'redBox' : 'blueBox'">
             div ID : {{id}} 
         </div>
         
-        <button type="button">Change Color</button>
+        <button type="button" v-on:click="toggleColor" v-bind:class="isRedbtn ? 'btn-danger' : 'btn-secondary'">Change Color</button>
     </div>
 
 </template>
